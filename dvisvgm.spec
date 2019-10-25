@@ -4,7 +4,7 @@
 #
 Name     : dvisvgm
 Version  : 2.1.3
-Release  : 1
+Release  : 2
 URL      : http://distfiles.gentoo.org/distfiles/dvisvgm-2.1.3.tar.gz
 Source0  : http://distfiles.gentoo.org/distfiles/dvisvgm-2.1.3.tar.gz
 Summary  : No detailed summary available
@@ -58,7 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571961174
+export SOURCE_DATE_EPOCH=1572034646
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -78,7 +78,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check || true
 
 %install
-export SOURCE_DATE_EPOCH=1571961174
+export SOURCE_DATE_EPOCH=1572034646
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/dvisvgm
 cp %{_builddir}/dvisvgm-2.1.3/COPYING %{buildroot}/usr/share/package-licenses/dvisvgm/8624bcdae55baeef00cd11d5dfcfa60f68710a02
