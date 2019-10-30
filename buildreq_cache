@@ -1,2 +1,5 @@
-2.1.3
+2.8
+asciidoc
+pkgconfig(libwoff2enc)
 util-linux
+xmlto
