@@ -1,4 +1,3 @@
-Configure miss: if g++ -std=gnu++11 static flag -static works
-Configure miss: xxhash.h usability
-Configure miss: xxhash.h presence
 Configure miss: xxhash.h
+Configure miss: xxhash.h presence
+Configure miss: xxhash.h usability
