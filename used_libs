@@ -1,8 +1,9 @@
 libbrotlienc.so.1
 libc.so.6
+libcrypto.so.3
 libfreetype.so.6
 libgcc_s.so.1
-libgs.so.9
+libgs.so.10
 libkpathsea.so.6
 libm.so.6
 libpotrace.so.0

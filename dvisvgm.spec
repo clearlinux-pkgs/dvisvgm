@@ -4,7 +4,7 @@
 #
 Name     : dvisvgm
 Version  : 3.0.2
-Release  : 18
+Release  : 19
 URL      : https://github.com/mgieseki/dvisvgm/releases/download/3.0.2/dvisvgm-3.0.2.tar.gz
 Source0  : https://github.com/mgieseki/dvisvgm/releases/download/3.0.2/dvisvgm-3.0.2.tar.gz
 Summary  : No detailed summary available
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1675092876
+export SOURCE_DATE_EPOCH=1676501738
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -87,7 +87,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check || true
 
 %install
-export SOURCE_DATE_EPOCH=1675092876
+export SOURCE_DATE_EPOCH=1676501738
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/dvisvgm
 cp %{_builddir}/dvisvgm-%{version}/COPYING %{buildroot}/usr/share/package-licenses/dvisvgm/8624bcdae55baeef00cd11d5dfcfa60f68710a02 || :
