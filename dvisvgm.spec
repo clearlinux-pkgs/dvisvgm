@@ -4,7 +4,7 @@
 #
 Name     : dvisvgm
 Version  : 3.0.2
-Release  : 19
+Release  : 20
 URL      : https://github.com/mgieseki/dvisvgm/releases/download/3.0.2/dvisvgm-3.0.2.tar.gz
 Source0  : https://github.com/mgieseki/dvisvgm/releases/download/3.0.2/dvisvgm-3.0.2.tar.gz
 Summary  : No detailed summary available
