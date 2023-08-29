@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : dvisvgm
-Version  : 3.1
-Release  : 27
-URL      : https://github.com/mgieseki/dvisvgm/releases/download/3.1/dvisvgm-3.1.tar.gz
-Source0  : https://github.com/mgieseki/dvisvgm/releases/download/3.1/dvisvgm-3.1.tar.gz
+Version  : 3.1.1
+Release  : 28
+URL      : https://github.com/mgieseki/dvisvgm/releases/download/3.1.1/dvisvgm-3.1.1.tar.gz
+Source0  : https://github.com/mgieseki/dvisvgm/releases/download/3.1.1/dvisvgm-3.1.1.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause BSL-1.0 GPL-3.0 MIT
@@ -60,10 +60,10 @@ man components for the dvisvgm package.
 
 
 %prep
-%setup -q -n dvisvgm-3.1
-cd %{_builddir}/dvisvgm-3.1
+%setup -q -n dvisvgm-3.1.1
+cd %{_builddir}/dvisvgm-3.1.1
 pushd ..
-cp -a dvisvgm-3.1 buildavx2
+cp -a dvisvgm-3.1.1 buildavx2
 popd
 
 %build
@@ -71,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1688677645
+export SOURCE_DATE_EPOCH=1693319718
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -101,7 +101,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check || true
 
 %install
-export SOURCE_DATE_EPOCH=1688677645
+export SOURCE_DATE_EPOCH=1693319718
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/dvisvgm
 cp %{_builddir}/dvisvgm-%{version}/COPYING %{buildroot}/usr/share/package-licenses/dvisvgm/8624bcdae55baeef00cd11d5dfcfa60f68710a02 || :
