@@ -7,7 +7,7 @@
 #
 Name     : dvisvgm
 Version  : 3.3
-Release  : 34
+Release  : 35
 URL      : https://github.com/mgieseki/dvisvgm/releases/download/3.3/dvisvgm-3.3.tar.gz
 Source0  : https://github.com/mgieseki/dvisvgm/releases/download/3.3/dvisvgm-3.3.tar.gz
 Summary  : No detailed summary available
